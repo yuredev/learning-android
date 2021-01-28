@@ -1,0 +1,7 @@
+* Chamado quando a tela da Activity perde o foco
+    ao pressionar o botao home ou quando chega uma ligação
+
+* Usado para salvar o estado da aplicação, se necessário
+
+* Se o estado for salvo, será possível reiniciar a aplicação
+onde ela foi pausada implementando o método onResume()

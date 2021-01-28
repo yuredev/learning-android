@@ -1,0 +1,7 @@
+* Literalmente encerra a execução de uma Activity
+
+* A memória associada é liberada
+
+* Pode ser chamada
+    * Pelo SO
+    * Pela aplicação, usando o método finish()

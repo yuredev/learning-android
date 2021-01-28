@@ -1,0 +1,10 @@
+* Chamado quando a Activity está prestes a se tornar
+vísivel ao usuário
+
+* Nesse ponto a View já está definida
+
+* Pode ser chamado depois de
+    onCreate
+    onRestart
+
+* Pode ser chamado várias vezes durante o ciclo de vida

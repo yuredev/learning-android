@@ -1,0 +1,13 @@
+ao girar a a tela no android
+toda a activity é destruída e
+recosntruída do zero
+
+porem caso haja dados de formulário
+o android se encarrega de salvalos
+automaticamente
+
+todavia alguns elementos de view podem
+não ser salvos de forma correta
+
+isso acontece pois todas variaveis
+são perdidas

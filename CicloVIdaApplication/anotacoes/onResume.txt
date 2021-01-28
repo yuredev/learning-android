@@ -1,0 +1,10 @@
+* A atividade está execuctando
+
+* Método chamado quando a Activity está no topo da
+"Activity Stack"
+
+* Atividade já é a principal e é possível interagir com o
+usuário
+
+* Comumente utilizado para disparar threads para atualizar
+dados na tela

@@ -1,0 +1,10 @@
+Os métodos de ciclo de vida de uma aplicação Android
+são métodos chamados pelo sistema operacional
+
+são eles o
+
+onCreate
+onStart
+onResume
+onStop
+onDestroy

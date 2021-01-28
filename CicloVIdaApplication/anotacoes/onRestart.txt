@@ -1,0 +1,2 @@
+* Activity parada (após onStop) poderá voltar a ser ativa se
+ela for reiniciada

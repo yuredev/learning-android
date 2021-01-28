@@ -1,0 +1,7 @@
+* Chamado depois do método onPause
+
+* Activity está sendo encerrada e não é mais visível ao usuário
+
+* Caso fique parada muito tempo o SO pode decidir liberar a
+memória
+    onDestroy()

@@ -1,0 +1,9 @@
+* Objetiva fazer a inicialização necessária para
+executar uma aplicação
+
+* Instanciar Views ou chamar método setContentView(view)
+para desenhar a tela
+
+* Unico método que é obrigatório a ser implementado
+
+* Chamado apenas uma vez durante o ciclo de vida
