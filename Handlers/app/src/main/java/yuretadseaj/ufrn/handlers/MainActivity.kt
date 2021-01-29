@@ -1,43 +1,41 @@
 package yuretadseaj.ufrn.handlers
 
-import android.annotation.SuppressLint
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Message
 import android.os.Handler
+import android.view.View
+import android.widget.Button
 import android.widget.ImageView
+import android.widget.Toast
 import java.io.IOException
 import java.net.URL
 
 class MainActivity : AppCompatActivity() {
 
-    private val messageCode = 26
-    lateinit var messenger: MyHandler
+    lateinit var handler: Handler
     private var bitMap: Bitmap? = null
     private var imgView: ImageView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        messenger = MyHandler()
+        handler = Handler()
         imgView = findViewById(R.id.imageView)
-
+        findViewById<Button>(R.id.btnDownload).setOnClickListener { click() }
     }
-    @SuppressLint("HandlerLeak")
-    inner class MyHandler : Handler() {
-        override fun handleMessage(msg: Message) {
-            when (msg.what) {
-                messageCode -> {
-                    Thread {
-                        bitMap = loadImageFromNetwork("https://images.uncyc.org/pt/c/c6/Geraltvidaloka.jpg")
-                    }.start()
-                    imgView?.setImageBitmap(bitMap)
-                }
-            }
+
+    private fun click() {
+        handler.post {
+            Toast.makeText(this, "A mensagem chegou", Toast.LENGTH_SHORT).show()
+            Thread {
+                bitMap = loadImageFromNetwork("https://images.uncyc.org/pt/c/c6/Geraltvidaloka.jpg")
+            }.start()
+            imgView?.setImageBitmap(bitMap)
         }
     }
+
     @Throws(IOException::class)
     fun loadImageFromNetwork(url: String): Bitmap? {
         var bitmap: Bitmap? = null

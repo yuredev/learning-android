@@ -13,4 +13,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/divider_horizontal_dark" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDownload"
+        android:text="@string/download"/>
 </LinearLayout>
