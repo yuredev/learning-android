@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Threads</string>
+    <string name="download_image">Download Image</string>
+    <string name="tap_do_download_image">Tap do download image</string>
+</resources>
